@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Reviews Page where we rate and score each coffee shop we visit</title>
 </head>
+
 <body>
+
+<header>
+  <h1>Our Reviews</h1>
+  <hr/>
+  <p>Here you can find all of our reviews ordered from newest to oldest!
+     We score Coffee shops on 7 categories with a score of 1-5 in each category,
+     with 35 being the maximum score a store can achieve.
+  </p>
+  <h2>Categories we score on:</h2>
+  <ol>
+    <li>Coffee Taste</li>
+    <li>Specialties</li>
+    <li>Location/Parking</li>
+    <li>Music/Vibes</li>
+    <li>Value</li>
+    <li>Outlets/Convenience</li>
+    <li>Accessibility</li>
+  </ol>
+  <hr/>
+  <p>Sort by:</p>
+  <form action="/form-handler" method="POST">
+    <label for="Categories"></label>
+    <select name="Categories" id="Categories">
+      <option value="Coffee Taste">Coffee Taste</option>
+      <option value="Specialties">Specialties</option>
+      <option value="Location/Parking">Location/Parking</option>
+      <option value="Music/Vibes">Music/Vibes</option>
+      <option value="Value">Value</option>
+      <option value="Outlets/Convenience">Outlets/Convenience</option>
+      <option value="Accessibility">Accessibility</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+</header>
+<main></main>
+<footer></footer>
 
 </body>
 </html>
