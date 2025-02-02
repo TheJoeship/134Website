@@ -12,8 +12,8 @@
   <h1>Our Reviews</h1>
   <hr/>
   <p>Here you can find all of our reviews ordered from newest to oldest!
-     We score Coffee shops on 7 categories with a score of 1-5 in each category,
-     with <em>35</em> being the maximum score a store can achieve!
+     We score Coffee shops on 8 categories with a score of 1-5 in each category,
+     with <em>40</em> being the maximum score a store can achieve!
   </p>
 
   <h2>Categories we score on:</h2>
@@ -24,6 +24,7 @@
     <li>Music/Vibes</li>
     <li>Value</li>
     <li>Outlets/Convenience</li>
+    <li>Food</li>
     <li>Accessibility</li>
   </ol>
 
@@ -34,6 +35,15 @@
   </details>
 
   <hr/>
+
+  <search>
+    <form action="/search">
+      <label for="review">Search for a coffee shop:</label>
+      <input type="search" id="review" placeholder="A shop name... e.g ">
+      <button type="submit">Search</button>
+    </form>
+  </search>
+
   <p>Sort by:</p>
   <form action="/form-handler" method="POST">
     <label for="Categories"></label>
@@ -44,6 +54,7 @@
       <option value="Music/Vibes">Music/Vibes</option>
       <option value="Value">Value</option>
       <option value="Outlets/Convenience">Outlets/Convenience</option>
+      <option value="Food">Food</option>
       <option value="Accessibility">Accessibility</option>
     </select>
     <button type="submit">Submit</button>
@@ -104,8 +115,16 @@
             <td>5/5</td>
           </tr>
           <tr>
+            <td>Food</td>
+            <td>0/5</td>
+          </tr>
+          <tr>
             <td>Accessibility</td>
             <td>5/5</td>
+          </tr>
+          <tr>
+            <td><b>Total Score:</b></td>
+            <td>32/40</td>
           </tr>
         </tbody>
       </table>
@@ -153,8 +172,16 @@
           <td>5/5</td>
         </tr>
         <tr>
+          <td>Food</td>
+          <td>5/5</td>
+        </tr>
+        <tr>
           <td>Accessibility</td>
           <td>5/5</td>
+        </tr>
+        <tr>
+          <td><b>Total Score:</b></td>
+          <td>31/40</td>
         </tr>
         </tbody>
       </table>
