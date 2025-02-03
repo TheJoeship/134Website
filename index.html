@@ -6,9 +6,14 @@
     <title>Coffee Chaos | Coffee Shop Reviews, Recommendations & more</title>
     <noscript>Sorry, this webpage requires Javascript to be enabled!</noscript>
     <link rel="icon" href="./image_assets/favicon.ico" type="image/favicon.ico">
-    <style>
-        body {border:1px solid black;}
-    </style>
+    <script>
+        class ILoveCoffee extends HTMLElement {
+            connectedCallback() {
+                this.innerText = 'I love coffee!';
+            }
+        }
+        customElements.define('love-coffee', ILoveCoffee);
+    </script>
 </head>
 
 
@@ -43,6 +48,8 @@
                 ctx.fillStyle = gradient;
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
             </script>
+            <br>
+            <love-coffee></love-coffee>
 
         <nav>
             <a href="index.html">Home</a>
