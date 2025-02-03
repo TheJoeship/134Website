@@ -6,6 +6,9 @@
     <title>Coffee Chaos | Coffee Shop Reviews, Recommendations & more</title>
     <noscript>Sorry, this webpage requires Javascript to be enabled!</noscript>
     <link rel="icon" href="./image_assets/favicon.ico" type="image/favicon.ico">
+    <style>
+        body {border:1px solid black;}
+    </style>
 </head>
 
 
@@ -19,8 +22,28 @@
 <main>
     <header>
         <div class="menu">
-        <img src="/image_assets/homepage.webp" alt="Picture of a Coffee Shop" height="350" width="400">
-        <h1>Coffee Chaos</h1>
+            <picture>
+                <source srcset="./image_assets/homepage.webp" media="(min-width: 600px)" type="image/webp">
+                <source srcset="./image_assets/homepage.webp" type="image/webp">
+                <img src="/image_assets/homepage.webp" alt="Picture of a Coffee Shop" height="400" width="600">
+            </picture>
+            <br>
+            <canvas id="canvas" width="300" height="200" style="border:2px solid"></canvas>
+            <script>
+                const canvas = document.getElementById('canvas');
+                const ctx = canvas.getContext('2d');
+
+                ctx.font ="bold 40px Garamond";
+                ctx.fillText("Coffee Chaos",35, canvas.height / 2,)
+
+                const gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2,
+                    0,canvas.width / 2,canvas.height / 2,150);
+                gradient.addColorStop(1, 'rgba(230, 193, 210,0.5)');
+                gradient.addColorStop(0.5, 'rgba(195, 222, 182,0.8)');
+                ctx.fillStyle = gradient;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            </script>
+
         <nav>
             <a href="index.html">Home</a>
             <a href="review.html">Our Reviews</a>
