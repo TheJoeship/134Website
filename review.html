@@ -33,72 +33,70 @@
   </style>
 </head>
 
-
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="review.html">Our Reviews</a>
-    <a href="map.html">Coffee Maps</a>
-    <a href="about.html">Our Story</a>
-    <a href="playlist.html">Coffeehouse Playlist</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
-  <h1>Our Reviews</h1>
-  <hr/>
-  <p>Here you can find all of our reviews ordered from newest to oldest!
-    We score Coffee shops on 8 categories with a score of 1-5 in each category,
-    with <em>40</em> being the maximum score a store can achieve! One of our favorite
-    coffees happens to be <coffee roast="dark" origin="USA" price="$12,99">Folgers</coffee>
-  </p>
-
-  <h2>Categories we score on:</h2>
-  <ol>
-    <li>Coffee Taste</li>
-    <li>Specialties</li>
-    <li>Location/Parking</li>
-    <li>Music/Vibes</li>
-    <li>Value</li>
-    <li>Outlets/Convenience</li>
-    <li>Food</li>
-    <li>Accessibility</li>
-  </ol>
-
-  <details>
-    <summary>More about our scoring</summary>
-    We use a holistic scoring method to rate coffee shops, and we believe that our scoring offers a well-rounded
-    critical view of these shops! <a href="about.html">Learn more about our scoring here!</a>
-  </details>
-
-  <hr/>
-
-  <search>
-    <form action="/search">
-      <label for="review">Search for a coffee shop:</label>
-      <input type="search" id="review" placeholder="A shop name... e.g ">
-      <button type="submit">Search</button>
-    </form>
-  </search>
-
-  <label for="Categories">Sort by:</label>
-  <select id="Categories">
-    <optgroup label="Categories">
-      <option>Coffee Taste</option>
-      <option>Specialties</option>
-      <option>Location/Parking</option>
-      <option>Music/Vibes</option>
-      <option>Value</option>
-      <option>Outlets/Convenience</option>
-      <option>Food</option>
-      <option>Accessibility</option>
-    </optgroup>
-    <optgroup label="Other">
-      <option>Highest Score</option>
-      <option>Lowest Score</option>
-    </optgroup>
-  </select>
-</header>
-
 <body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="review.html">Our Reviews</a>
+      <a href="map.html">Coffee Maps</a>
+      <a href="about.html">Our Story</a>
+      <a href="playlist.html">Coffeehouse Playlist</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <h1>Our Reviews</h1>
+    <p>Here you can find all of our reviews ordered from newest to oldest!
+      We score Coffee shops on 8 categories with a score of 1-5 in each category,
+      with <em>40</em> being the maximum score a store can achieve! One of our favorite
+      coffees happens to be:
+    </p>
+    <coffee roast="dark" origin="USA" price="$12,99">Folgers</coffee>
+
+    <h2>Categories we score on:</h2>
+    <ol>
+      <li>Coffee Taste</li>
+      <li>Specialties</li>
+      <li>Location/Parking</li>
+      <li>Music/Vibes</li>
+      <li>Value</li>
+      <li>Outlets/Convenience</li>
+      <li>Food</li>
+      <li>Accessibility</li>
+    </ol>
+
+    <details>
+      <summary>More about our scoring</summary>
+      We use a holistic scoring method to rate coffee shops, and we believe that our scoring offers a well-rounded
+      critical view of these shops! <a href="about.html">Learn more about our scoring here!</a>
+    </details>
+
+    <hr>
+
+    <search>
+      <form action="/search">
+        <label for="review">Search for a coffee shop:</label>
+        <input type="search" id="review" placeholder="A shop name... e.g ">
+        <button type="submit">Search</button>
+      </form>
+    </search>
+
+    <label for="Categories">Sort by:</label>
+    <select id="Categories">
+      <optgroup label="Categories">
+        <option>Coffee Taste</option>
+        <option>Specialties</option>
+        <option>Location/Parking</option>
+        <option>Music/Vibes</option>
+        <option>Value</option>
+        <option>Outlets/Convenience</option>
+        <option>Food</option>
+        <option>Accessibility</option>
+      </optgroup>
+      <optgroup label="Other">
+        <option>Highest Score</option>
+        <option>Lowest Score</option>
+      </optgroup>
+    </select>
+  </header>
 <main>
   <section>
   <ul>
@@ -124,7 +122,7 @@
       <table>
         <caption><strong>Scoring:</strong></caption>
         <colgroup>
-          <col span="2" style="accent-color: darkolivegreen"></col>
+          <col span="2" style="accent-color: darkolivegreen">
         </colgroup>
         <thead>
           <tr>
@@ -193,7 +191,7 @@
       <table>
         <caption><strong>Scoring:</strong></caption>
         <colgroup>
-          <col span="2" style="accent-color: darkolivegreen"></col>
+          <col span="2" style="accent-color: darkolivegreen">
         </colgroup>
         <thead>
         <tr>
@@ -251,16 +249,16 @@
   </ul>
   </section>
 </main>
-<footer>
-  <audio controls>
-    <source src="/image_assets/Coffeesound.mp3" type="audio/mpeg">
-    Your browser does not support the audio element!
-  </audio>
-  <address>
-    Contact us at
-    <a href="mailto:jwarzybokmckenney@gmail.com">this email address</a>
-  </address>
-</footer>
+  <footer>
+    <audio controls>
+      <source src="/image_assets/Coffeesound.mp3" type="audio/mpeg">
+      Your browser does not support the audio element!
+    </audio>
+    <address>
+      Contact us at
+      <a href="mailto:jwarzybokmckenney@gmail.com">this email address</a>
+    </address>
+  </footer>
 
 </body>
 </html>
