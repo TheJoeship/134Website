@@ -5,23 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Coffee Chaos | Coffee Shop Reviews, Recommendations & more</title>
     <link rel="icon" href="./image_assets/favicon.ico" type="image/favicon.ico">
-    <script>
-        class ILoveCoffee extends HTMLElement {
-            connectedCallback() {
-                this.innerText = 'I love coffee!';
-            }
-        }
-        customElements.define('love-coffee', ILoveCoffee);
-    </script>
+    <link rel="stylesheet" href="./css/homepage.css">
 </head>
 
 <body>
-    <dialog open>
-        <p>Welcome! We are still a work in progress :)</p>
-        <form method="dialog">
-            <button>OK</button>
-        </form>
-    </dialog>
     <main>
         <div class="menu">
             <picture>
@@ -29,33 +16,15 @@
                 <source srcset="./image_assets/homepage.webp" type="image/webp">
                 <img src="/image_assets/homepage.webp" alt="Picture of a Coffee Shop" height="400" width="600">
             </picture>
-            <br>
-            <canvas id="canvas" width="300" height="200" style="border:2px solid"></canvas>
-            <script>
-                const canvas = document.getElementById('canvas');
-                const ctx = canvas.getContext('2d');
-
-                ctx.font = "bold 40px Garamond";
-                ctx.fillText("Coffee Chaos", 35, canvas.height / 2,)
-
-                const gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2,
-                    0, canvas.width / 2, canvas.height / 2, 150);
-                gradient.addColorStop(1, 'rgba(230, 193, 210,0.5)');
-                gradient.addColorStop(0.5, 'rgba(195, 222, 182,0.8)');
-                ctx.fillStyle = gradient;
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-            </script>
-            <noscript>Sorry, this webpage requires Javascript to be enabled!</noscript>
-            <br>
-            <love-coffee></love-coffee>
-
             <nav>
-                <a href="index.html">Home</a>
-                <a href="review.html">Our Reviews</a>
-                <a href="map.html">Coffee Maps</a>
-                <a href="about.html">Our Story</a>
-                <a href="playlist.html">Coffeehouse Playlist</a>
-                <a href="contact.html">Contact Us</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="review.html">Our Reviews</a></li>
+                    <li><a href="map.html">Coffee Maps</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="playlist.html">Coffeehouse Playlist</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
     </main>

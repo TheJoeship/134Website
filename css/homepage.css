@@ -1,0 +1,53 @@
+/* Page-wide background */
+body {
+    background: linear-gradient(45deg, hotpink 0%, hotpink 30%, lightgreen 100%);
+    background-size: 300% 300%;
+    animation: 10s homepage-gradient ease infinite;
+    text-align: center;
+}
+
+@keyframes homepage-gradient {
+    0%   { background-position: 50% 0;}
+    25% { background-position: 75% 25%;}
+    50%  { background-position: 100% 50%;}
+    75%  { background-position: 75% 25%;}
+    100% { background-position: 50% 0;}
+}
+/* nav bar*/
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: solid;
+    list-style-type: none;
+    text-align: center;
+    align-content: center;
+    width: 50%;
+}
+
+li {
+    border-right: 1px solid black;
+}
+
+li:first-child {
+    border-left: 1px solid black;
+}
+
+li a {
+    display: block;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+li a:hover {
+    background-color: hotpink;
+}
+
+
