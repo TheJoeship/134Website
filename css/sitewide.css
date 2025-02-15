@@ -1,0 +1,36 @@
+/* Global nav bar across all webpages (except for home) */
+/* nav bar*/
+.navigation ul {
+    position: sticky; /* not working?? */
+    top: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(193, 225, 193); /* pastel green ! */
+    border-radius: 10px;
+    border-style: solid;
+    list-style-type: none;
+}
+
+.navigation li {
+    border-right: 1px solid black;
+    float: left;
+}
+
+.navigation a {
+    display: block;
+    font-family: hserif, serif;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.navigation li a:hover {
+    background-color: rgb(248, 200, 220); /* pastel pink*/
+}
+
+.active {
+    background-color: rgb(248, 200, 220); /* pastel pink*/
+}
