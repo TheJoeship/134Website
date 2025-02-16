@@ -1,0 +1,31 @@
+/* header */
+h1{
+    font-family: "Brush Script MT", cursive;
+    font-size: 5em;
+    color: darkseagreen;
+    text-align: center;
+}
+
+/* main (about us section) */
+main {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: darkseagreen;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* def table of scoring */
+dt {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    width: fit-content;
+}
+
+dd{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    width: fit-content;
+}
