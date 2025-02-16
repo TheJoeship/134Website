@@ -1,7 +1,7 @@
 /* Page-wide background */
 body {
     background: linear-gradient(45deg, hotpink 0%, hotpink 30%, lightgreen 100%);
-    background-size: 300% 300%;
+    background-size: 500% 500%;
     animation: 10s homepage-gradient ease infinite;
     text-align: center;
 }

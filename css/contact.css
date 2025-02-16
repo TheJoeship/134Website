@@ -1,0 +1,52 @@
+/* body stuff */
+body {
+    text-align: center;
+}
+
+
+
+
+
+/* form */
+fieldset{border:none}
+
+form{
+    display: grid;
+    margin-left: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(248, 200, 220);
+}
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid seagreen;
+    border-radius: 10px;
+    background-color: rgb(193, 225, 193);
+    resize: vertical;
+}
+
+
+textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid seagreen;
+    border-radius: 10px;
+    background-color: rgb(193, 225, 193);
+}
+
+button {
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: seagreen;
+}

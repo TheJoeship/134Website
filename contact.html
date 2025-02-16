@@ -6,9 +6,10 @@
     <title>Need to contact us?? Shoot us a message below!</title>
     <link rel="icon" href="./image_assets/favicon.ico" type="image/favicon.ico">
     <link rel="stylesheet" href="./css/sitewide.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 
-<body>
+<body class = "pink">
     <header>
         <nav class="navigation">
             <ul>
@@ -23,35 +24,23 @@
         <h1>Contact Page</h1>
     </header>
     <main>
-        <section id = "contact">
-            <h2>Please feel free to shoot us a message if you've got something to say :)</h2>
+        <h2>Please feel free to shoot us a message if you've got something to say :)</h2>
             <form method="POST" action="/form-handler">
                 <fieldset>
-                    <legend>Contact Us :)</legend>
-                    <label for="name">Your name
+                    <label for="name">Your name</label>
                         <input type="text" id="name" name="name" placeholder="Your name">
-                    </label>
+                    <br>
                     <label for="email">Your email
                         <input type="email" id="email" name="email" placeholder="Your email">
                     </label>
                     <br>
-                    <label for="message">Your message<br>
+                    <label for="message">Your message
                         <textarea name="message" id="message" cols="60" rows="5" placeholder="yap away"></textarea>
                     </label>
                     <br>
-                    <label for="favdrink"> Let us know our favorite drink!</label>
-                        <input list="drinks" name="favdrink" id="favdrink">
-                        <datalist id="drinks">
-                            <option value="Coffee!"></option>
-                            <option value="Matcha!"></option>
-                            <option value="Tea!"></option>
-                            <option value="Americano!"></option>
-                            <option value="Tea Latte's"></option>
-                        </datalist>
                     <button type="submit">Submit</button>
                 </fieldset>
             </form>
-        </section>
     </main>
 </body>
 </html>

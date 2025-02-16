@@ -1,4 +1,14 @@
 /* Global nav bar across all webpages (except for home) */
+
+/* body */
+body.green {
+    background-color: rgb(225, 248, 217); /* peppermint, very light green */
+}
+
+body.pink {
+    background-color: rgb(255, 240, 245); /* lav blush, very light pink */
+}
+
 /* nav bar*/
 .navigation ul {
     position: sticky; /* not working?? */
