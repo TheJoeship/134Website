@@ -24,7 +24,7 @@ body.pink {
 }
 
 .navigation li {
-    border-right: 1px solid black;
+    border-right: 1px solid black !important;
     float: left;
 }
 
