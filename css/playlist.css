@@ -1,0 +1,40 @@
+/* body */
+body {
+    text-align: center;
+}
+/* heading */
+h1{
+    font-family: "Brush Script MT", cursive;
+    font-size: 5em;
+    color: lightpink;
+}
+
+/* spotify iframe */
+iframe {
+    border: none;
+}
+
+
+
+/* input area */
+input {
+    padding: 9px 17px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+button {
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: black;
+    background-color: lightpink;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hotpink;
+}
