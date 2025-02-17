@@ -3,7 +3,10 @@ body {
     background: linear-gradient(45deg, hotpink 0%, hotpink 30%, lightgreen 100%);
     background-size: 500% 500%;
     animation: 10s homepage-gradient ease infinite;
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes homepage-gradient {
@@ -15,35 +18,24 @@ body {
 }
 /* nav bar*/
 ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0 auto;
-    overflow: hidden;
     background-color: transparent;
-    border-radius: 10px;
-    border-style: solid;
     list-style-type: none;
-    text-align: center;
-    align-content: center;
-    width: 50%;
+    border: hotpink 10px solid;
+    padding: 50px;
+    border-radius: 30px;
 }
 
-li {
-    border-right: 1px solid black;
-}
-
-li:first-child {
-    border-left: 1px solid black;
-}
 
 li a {
     display: block;
-    font-family: fantasy;
-    color: black;
+    font-family: OCR A Std, monospace;
+    color: darkolivegreen;
     text-align: center;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 30px;
+    font-size: 40px;
+
+
 }
 
 li a:hover {
