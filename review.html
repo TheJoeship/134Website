@@ -46,7 +46,7 @@
     </details>
 
 
-    <div class="search">
+
     <search>
       <form action="/search">
         <label for="review">Search for a coffee shop:</label>
@@ -72,7 +72,7 @@
         <option>Lowest Score</option>
       </optgroup>
     </select>
-    </div>
+
   </header>
 <main>
   <ul class = "reviews">
@@ -83,7 +83,10 @@
         <source media="(min-width:1024px)" srcset="./image_assets/reserve.jpg">
         <source media="(max-width:1023px)" type="image/webp" srcset="./image_assets/reserve.webp">
         <source media="(max-width:1023px)" srcset="./image_assets/reserve.jpg">
-        <img src="./image_assets/reserve.jpg" alt="A picture from the starbucks reserve in Manhat" loading="lazy" sizes="(min-width:1024px) 280px, 200px">
+        <img src="./image_assets/reserve.jpg"
+             srcset="./image_assets/reserve.jpg 280w"
+             sizes="(min-width:1024px) 280px, 200px"
+             alt="A picture from the starbucks reserve in Manhattan" loading="lazy">
       </picture>
       <hgroup>
           <h4>Recite your baseline</h4>
@@ -154,11 +157,14 @@
     <li class = "review">
       <h3>Dummy Review #2</h3>
       <picture>
-        <source media="(min-width:1024px)" type="image/webp" srcset="./image_assets/coffeepic.jpg">
+        <source media="(min-width:1024px)" type="image/webp" srcset="./image_assets/coffeepic.webp">
         <source media="(min-width:1024px)" srcset="./image_assets/coffeepic.jpg">
         <source media="(max-width:1023px)" type="image/webp" srcset="./image_assets/coffeepic.webp">
         <source media="(max-width:1023px)" srcset="./image_assets/coffeepic.jpg">
-        <img src="./image_assets/coffeepic.jpg" alt="A picture of a cup of coffee at a pool" loading="lazy" sizes="(min-width:1024px) 280px, 200px">
+        <img src="./image_assets/coffeepic.jpg"
+             srcset="./image_assets/coffeepic.jpg 280w"
+             sizes="(min-width:1024px) 280px, 200px"
+             alt="A picture of a coffee I had in Roatan, Honduras" loading="lazy">
       </picture>
         <hgroup>
           <h4>Recite your baseline</h4>

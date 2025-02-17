@@ -18,19 +18,12 @@ header {
     background-color: var(--pastelpink);
 }
 
-.search {
-    border: black solid 2px;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 10px;
-    background-color: var(--pastel-lavender);
-}
 
 input,select {
     padding: 12px 20px;
     border: seagreen solid 2px;
     border-radius: 10px;
-    background-color: var(--pastelgreen);
+    background-color: var(--pastel-lavender);
     margin: 5px;
 }
 /* reivew images */
