@@ -25,6 +25,14 @@ ul {
     border-radius: 30px;
 }
 
+@media screen and (max-width: 600px){
+    ul {
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+
 
 li a {
     display: block;
@@ -34,6 +42,7 @@ li a {
     text-decoration: none;
     padding: 30px;
     font-size: 40px;
+    transition: all 0.25s ease-out;
 
 
 }

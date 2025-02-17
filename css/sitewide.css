@@ -1,12 +1,28 @@
+/* root */
+:root {
+    --peppermintgreen: rgb(225, 248, 217);
+    --lavblush: rgb(255, 240, 245);
+    --pastelpink: rgb(248, 200, 220);
+    --pastelgreen: rgb(193, 225, 193);
+    --pastelpinkdrkr: color-mix(in sRGB, hotpink 30%, white 70%);
+    --pastel-lavender: color-mix(in sRGB, lavender 80%, white 20%);
+}
+
+
+
+
+
+
+
 /* Global nav bar across all webpages (except for home) */
 
 /* body */
 body.green {
-    background-color: rgb(225, 248, 217); /* peppermint, very light green */
+    background-color: var(--peppermintgreen); /* peppermint, very light green */
 }
 
 body.pink {
-    background-color: rgb(255, 240, 245); /* lav blush, very light pink */
+    background-color: var(--lavblush); /* lav blush, very light pink */
 }
 
 /* h1 */
@@ -23,7 +39,7 @@ h1{
     margin: 0;
     overflow: hidden;
     width: 100%;
-    background-color: rgb(193, 225, 193); /* pastel green ! */
+    background-color: var(--pastelgreen); /* pastel green ! */
     border-radius: 10px;
     border-style: solid;
     list-style-type: none;
@@ -41,12 +57,28 @@ h1{
     text-align: center;
     text-decoration: none;
     padding: 8px 16px;
+    transition: all 0.5s ease-out;
 }
 
-.navigation li a:hover {
-    background-color: rgb(248, 200, 220); /* pastel pink*/
+.navigation li a:hover, .navigation a:focus {
+    background-color: var(--pastelpink); /* pastel pink*/
 }
 
 .active {
-    background-color: rgb(248, 200, 220); /* pastel pink*/
+    background-color: var(--pastelpink); /* pastel pink*/
+}
+
+/* buttons */
+button {
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkseagreen;
 }

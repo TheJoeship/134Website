@@ -22,13 +22,11 @@
   </nav>
   <header>
     <h1>Our Reviews</h1>
-    <p>Here you can find all of our reviews ordered from newest to oldest!
+    <p>
+      Here you can find all of our reviews ordered from newest to oldest!
       We score Coffee shops on 8 categories with a score of 1-5 in each category,
-      with <em>40</em> being the maximum score a store can achieve! One of our favorite
-      coffees happens to be:
+      with <em>40</em> being the maximum score a store can achieve!
     </p>
-    <coffee roast="dark" origin="USA" price="$12,99">Folgers</coffee>
-
     <h2>Categories we score on:</h2>
     <ol>
       <li>Coffee Taste</li>
@@ -80,7 +78,13 @@
   <ul class = "reviews">
     <li class = "review">
       <h3>Dummy Review #2</h3>
-      <img src="/image_assets/lovesong.jpeg" alt="Lovesong Coffee" height="399" width="300" loading = "lazy">
+      <picture>
+        <source media="(min-width:1024px)" type="image/webp" srcset="./image_assets/reserve.webp">
+        <source media="(min-width:1024px)" srcset="./image_assets/reserve.jpg">
+        <source media="(max-width:1023px)" type="image/webp" srcset="./image_assets/reserve.webp">
+        <source media="(max-width:1023px)" srcset="./image_assets/reserve.jpg">
+        <img src="./image_assets/reserve.jpg" alt="A picture from the starbucks reserve in Manhat" loading="lazy" sizes="(min-width:1024px) 280px, 200px">
+      </picture>
       <hgroup>
           <h4>Recite your baseline</h4>
           <p>
@@ -149,7 +153,13 @@
     </li>
     <li class = "review">
       <h3>Dummy Review #2</h3>
-      <img src="/image_assets/reserve.jpg" alt="coffee cup and croissant" height="380" width="300" loading = "lazy">
+      <picture>
+        <source media="(min-width:1024px)" type="image/webp" srcset="./image_assets/coffeepic.jpg">
+        <source media="(min-width:1024px)" srcset="./image_assets/coffeepic.jpg">
+        <source media="(max-width:1023px)" type="image/webp" srcset="./image_assets/coffeepic.webp">
+        <source media="(max-width:1023px)" srcset="./image_assets/coffeepic.jpg">
+        <img src="./image_assets/coffeepic.jpg" alt="A picture of a cup of coffee at a pool" loading="lazy" sizes="(min-width:1024px) 280px, 200px">
+      </picture>
         <hgroup>
           <h4>Recite your baseline</h4>
           <p>
