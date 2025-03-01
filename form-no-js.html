@@ -44,25 +44,6 @@
                     <output id="charCount"></output>
                 </fieldset>
             </form>
-
-
-            <script>
-                const contactForm = document.getElementById('contact');
-                const message = document.getElementById('message');
-                const errorOutput = document.getElementById('error');
-                const charCount = document.getElementById('charCount');
-                errorOutput.value = '';
-                contactForm.addEventListener('submit', function(event) {
-                    if (message.value.trim() === '') {
-                        event.preventDefault();
-                        errorOutput.value = "Error: Are you sure you want to submit an empty message?";
-                    }
-                })
-
-                message.addEventListener('input', function() {
-                    charCount.value = `char count: ${message.value.length}`;
-                })
-            </script>
     </main>
 </body>
 </html>

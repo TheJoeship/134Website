@@ -15,32 +15,48 @@ body {
 
 
 /* form */
-fieldset{border:none}
 
 form{
-    display: grid;
-    margin-left: 10px;
+    margin: 2em auto;
     border: 2px solid black;
     border-radius: 10px;
     background-color: var(--pastelpinkdrkr);
+    padding: 10px;
 }
-input {
+
+fieldset{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 0.5em 1.5em;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+input,textarea {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 2px solid seagreen;
     border-radius: 10px;
     background-color: var(--pastelgreen);
-    width: 20%;
+    width: auto;
+    text-align: left;
+}
+input,textarea:focus-visible{outline: none}
+
+
+/* invalid input */
+@keyframes blink {
+    50% {border-color: red}
+}
+input:user-invalid{
+    animation: blink 1.5s ease-in infinite alternate;
 }
 
 
-textarea {
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid seagreen;
-    border-radius: 10px;
-    background-color: var(--pastelgreen);
-    width: 40%;
-}
+
+/* output info styling */
+output {justify-self: right;}
+output,button{grid-column: 2;}
+
