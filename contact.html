@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +22,9 @@
             </ul>
         </nav>
         <h1>Contact Page</h1>
+        <button id="toggleButton" class="toggleButton">
+            Light/Dark Mode
+        </button>
     </header>
     <main>
         <h2>Please feel free to shoot us a message if you've got something to say :)</h2>
@@ -34,7 +37,7 @@
                     <input type="email" id="email" name="email" placeholder="rdeckard@lapd.gov" required>
 
                     <label for="message">Your Message:</label>
-                    <textarea name="message" id="message" maxlength="300" cols="60" rows="5" placeholder="Let us know what's up!"></textarea>
+                    <textarea name="message" id="message" maxlength="400" cols="60" rows="5" placeholder="Let us know what's up!"></textarea>
 
                     <input type="hidden" id="possible_bot" name="possible_bot" value="true">
 
@@ -44,25 +47,8 @@
                     <output id="charCount"></output>
                 </fieldset>
             </form>
-
-
-            <script>
-                const contactForm = document.getElementById('contact');
-                const message = document.getElementById('message');
-                const errorOutput = document.getElementById('error');
-                const charCount = document.getElementById('charCount');
-                errorOutput.value = '';
-                contactForm.addEventListener('submit', function(event) {
-                    if (message.value.trim() === '') {
-                        event.preventDefault();
-                        errorOutput.value = "Error: Are you sure you want to submit an empty message?";
-                    }
-                })
-
-                message.addEventListener('input', function() {
-                    charCount.value = `char count: ${message.value.length}`;
-                })
-            </script>
+            <script src="contact-form.js"></script>
+            <script src="theme.js"></script>
     </main>
 </body>
 </html>

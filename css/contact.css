@@ -20,7 +20,7 @@ form{
     margin: 2em auto;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: var(--pastelpinkdrkr);
+    background-color: var(--background-color1);
     padding: 10px;
 }
 
@@ -39,7 +39,7 @@ input,textarea {
     box-sizing: border-box;
     border: 2px solid seagreen;
     border-radius: 10px;
-    background-color: var(--pastelgreen);
+    background-color: var(--global-green1);
     width: auto;
     text-align: left;
 }

@@ -19,7 +19,7 @@ main {
 /* header */
 h1{
     font-size: 4em;
-    color: lightpink;
+    color: var(--global-pink2);
     width: fit-content;
     margin: auto;
     padding: 10px;
@@ -30,7 +30,7 @@ h1{
 iframe {
     height: 600px;
     width: max(300px,50dvw);
-    border: 5px solid lightpink;
+    border: 5px solid var(--global-pink2);
     border-radius: 10px;
 }
 /* list of coffee shops*/
@@ -39,14 +39,14 @@ ul.coffee-shop-list {
     width: max(300px,50dvw);
     list-style-type: square;
     overflow-y: auto;
-    border: 5px solid lightpink;
+    border: 5px solid var(--global-pink2);
     border-radius: 10px;
     margin: 0;
-    background-color: var(--lavblush);
+    background-color: var(--bodycolor2);
 }
 
 .coffee-shop-list li{
-    text-decoration-color: lightpink;
+    text-decoration-color: var(--global-pink2);
     padding: 10px;
     margin: 10px;
     font-size: 1.5em;

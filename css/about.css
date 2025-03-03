@@ -33,7 +33,7 @@ dt {
     padding: 3px;
     width: fit-content;
     margin: 5px;
-    background-color: lightpink;
+    background-color: var(--global-pink2);
 }
 
 dd{

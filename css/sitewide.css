@@ -1,16 +1,25 @@
 /* root */
 :root {
-    --peppermintgreen: rgb(225, 248, 217);
-    --lavblush: rgb(255, 240, 245);
-    --pastelpink: rgb(248, 200, 220);
-    --pastelgreen: rgb(193, 225, 193);
-    --pastelpinkdrkr: color-mix(in sRGB, hotpink 30%, white 70%);
-    --pastel-lavender: color-mix(in sRGB, lavender 80%, white 20%);
+    --bodycolor1: rgb(225, 248, 217);
+    --bodycolor2: rgb(255, 240, 245);
+    --global-pink1: rgb(248, 200, 220);
+    --global-green1: rgb(193, 225, 193);
+    --background-color1: color-mix(in sRGB, hotpink 30%, white 70%);
+    --background-color2: color-mix(in sRGB, lavender 80%, white 20%);
+    --global-pink2: lightpink;
 }
 
 
-
-
+/* switcher class */
+.drk-theme {
+    --bodycolor1: #5E6623;
+    --bodycolor2: rgb(140,158,255); /* text color: (214,247,76) */
+    --global-pink1: #EDDADA;
+    --global-green1: rgb(95, 168, 96);
+    --background-color1: rgb(186,221,127);
+    --background-color2: rgb(221,160,221);
+    --global-pink2: #e57f92;
+}
 
 
 
@@ -18,11 +27,11 @@
 
 /* body */
 body.green {
-    background-color: var(--peppermintgreen); /* peppermint, very light green */
+    background-color: var(--bodycolor1); /* peppermint, very light green */
 }
 
 body.pink {
-    background-color: var(--lavblush); /* lav blush, very light pink */
+    background-color: var(--bodycolor2); /* lav blush, very light pink */
 }
 
 /* h1 */
@@ -39,7 +48,7 @@ h1{
     margin: 0;
     overflow: hidden;
     width: 100%;
-    background-color: var(--pastelgreen); /* pastel green ! */
+    background-color: var(--global-green1); /* pastel green ! */
     border-radius: 10px;
     border-style: solid;
     list-style-type: none;
@@ -61,11 +70,11 @@ h1{
 }
 
 .navigation li a:hover, .navigation a:focus {
-    background-color: var(--pastelpink); /* pastel pink*/
+    background-color: var(--global-pink1); /* pastel pink*/
 }
 
 .active {
-    background-color: var(--pastelpink); /* pastel pink*/
+    background-color: var(--global-pink1); /* pastel pink*/
 }
 
 /* buttons */
@@ -79,6 +88,25 @@ button {
     cursor: pointer;
 }
 
+/* theme button */
+.toggleButton {
+    position: fixed;
+    z-index: 9999;
+    bottom: 1em;
+    right: 1em;
+    padding: 2em;
+    background-color: var(--global-pink1);
+    font-family: "Courier New", Courier, serif;
+}
+/* if js not enabled do not display theme button */
+.no-js .toggleButton {display: none}
+
+
 button:hover {
     background-color: darkseagreen;
+}
+
+::placeholder{
+    color: #7a7a7a;
+    opacity: 1;
 }

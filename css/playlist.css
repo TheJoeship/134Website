@@ -4,7 +4,7 @@ body {
 }
 /* heading */
 h1{
-    color: lightpink;
+    color: var(--global-pink2);
 }
 
 /* spotify iframe */
@@ -27,5 +27,5 @@ input {
 }
 
 button:hover {
-    background-color: hotpink;
+    background-color: var(--global-pink2);
 }
