@@ -76,162 +76,27 @@
       Light/Dark Mode
     </button>
   </header>
+
 <main>
-  <ul class = "reviews">
-    <li class = "review">
-      <h3>Dummy Review #2</h3>
-      <picture>
-        <source media="(min-width:1024px)" type="image/webp" srcset="./image_assets/reserve.webp">
-        <source media="(min-width:1024px)" srcset="./image_assets/reserve.jpg">
-        <source media="(max-width:1023px)" type="image/webp" srcset="./image_assets/reserve.webp">
-        <source media="(max-width:1023px)" srcset="./image_assets/reserve.jpg">
-        <img src="./image_assets/reserve.jpg"
-             srcset="./image_assets/reserve.jpg 280w"
-             sizes="(min-width:1024px) 280px, 200px"
-             alt="A picture from the starbucks reserve in Manhattan" loading="lazy">
-      </picture>
-      <hgroup>
-          <h4>Recite your baseline</h4>
-          <p>
-            <cite><a href="https://gist.github.com/JuneKelly/57b1acd4234409917d44eb90c88d7804"></a>We're going to go on.</cite>
-            Cells. They were all put together at a time. Cells. Millions and billions of them.
-            Cells. Were you ever arrested? Cells. Did you spend much time in the cell? Cells. Have you ever been in an instituion?
-            Cells. Do they keep you in a cell? Cells. When you're not performing your duties do they keep you in a little box?
-            Cells. Interlinked. What's it like to hold the hand of someone you love? Interlinked. Do they teach you how to feel finger to finger?
-            Interlinked. Do you long for having your heart interlinked? Interlinked. Do you dream about being interlinked?
-            Have they left a place for you where you can dream? Interlinked. What's it like to hold your child in your arms?
-            Interlinked. What's it like to play with your dog? Interlinked. Do you feel that there's a part of you that's missing?
-            Interlinked. Do you like to connect to things? Interlinked. What happens when that linkage is broken? Interlinked.
-            Have they let you feel heartbreak? Interlinked. Did you buy a present for the person you love? Within cells interlinked.
-            Why don't you say that three times? Within cells interlinked. Within cells interlinked. Within cells interlinked.
-          </p>
-      </hgroup>
-      <table>
-        <caption><strong>Scoring:</strong></caption>
-        <thead>
-          <tr>
-            <th>Category</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Coffee Taste</td>
-            <td>5/5</td>
-          </tr>
-          <tr>
-            <td>Specialties</td>
-            <td>4/5</td>
-          </tr>
-          <tr>
-            <td>Location/Parking</td>
-            <td>3/5</td>
-          </tr>
-          <tr>
-            <td>Music/Vibes</td>
-            <td>5/5</td>
-          </tr>
-          <tr>
-            <td>Value</td>
-            <td>5/5</td>
-          </tr>
-          <tr>
-            <td>Outlets/Convenience</td>
-            <td>5/5</td>
-          </tr>
-          <tr>
-            <td>Food</td>
-            <td>0/5</td>
-          </tr>
-          <tr>
-            <td>Accessibility</td>
-            <td>5/5</td>
-          </tr>
-          <tr>
-            <td><b>Total Score:</b></td>
-            <td>
-              <b>35/40</b>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </li>
-    <li class = "review">
-      <h3>Dummy Review #2</h3>
-      <picture>
-        <source media="(min-width:1024px)" type="image/webp" srcset="./image_assets/coffeepic.webp">
-        <source media="(min-width:1024px)" srcset="./image_assets/coffeepic.jpg">
-        <source media="(max-width:1023px)" type="image/webp" srcset="./image_assets/coffeepic.webp">
-        <source media="(max-width:1023px)" srcset="./image_assets/coffeepic.jpg">
-        <img src="./image_assets/coffeepic.jpg"
-             srcset="./image_assets/coffeepic.jpg 280w"
-             sizes="(min-width:1024px) 280px, 200px"
-             alt="A picture of a coffee I had in Roatan, Honduras" loading="lazy">
-      </picture>
-        <hgroup>
-          <h4>Recite your baseline</h4>
-          <p>
-            I've seen things you people wouldn't believe. Attack ships on fire off (the) shoulder of Orion.
-            I watched C-beams glitter in the dark near the <span class="scifi"> Tannhäuser Gate</span>.
-            All those moments will be lost in time, like tears in rain. Time to die.
-          </p>
-        </hgroup>
-      <table>
-        <caption><strong>Scoring:</strong></caption>
-        <colgroup>
-          <col span="2" style="accent-color: darkolivegreen">
-        </colgroup>
-        <thead>
-        <tr>
-          <th>Category</th>
-          <th>Score</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Coffee Taste</td>
-          <td>4/5</td>
-        </tr>
-        <tr>
-          <td>Specialties</td>
-          <td>5/5</td>
-        </tr>
-        <tr>
-          <td>Location/Parking</td>
-          <td>1/5</td>
-        </tr>
-        <tr>
-          <td>Music/Vibes</td>
-          <td>3/5</td>
-        </tr>
-        <tr>
-          <td>Value</td>
-          <td>3/5</td>
-        </tr>
-        <tr>
-          <td>Outlets/Convenience</td>
-          <td>5/5</td>
-        </tr>
-        <tr>
-          <td>Food</td>
-          <td>5/5</td>
-        </tr>
-        <tr>
-          <td>Accessibility</td>
-          <td>5/5</td>
-        </tr>
-        <tr>
-          <td><b>Total Score:</b></td>
-          <td>
-            <b>35/40</b>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </li>
-  </ul>
+
+  <div id="gallery"></div>
+  <script type="module" src="javascript/review-cards.js"></script>
+  <script src="javascript/populate-review-cards.js"></script>
+
 </main>
   <footer>
+    <!--
+    <picture>
+      <source media="(min-width:1024px)" type="image/webp" srcset="./image_assets/coffeepic.webp">
+      <source media="(min-width:1024px)" srcset="./image_assets/coffeepic.jpg">
+      <source media="(max-width:1023px)" type="image/webp" srcset="./image_assets/coffeepic.webp">
+      <source media="(max-width:1023px)" srcset="./image_assets/coffeepic.jpg">
+      <img src="./image_assets/coffeepic.jpg"
+           srcset="./image_assets/coffeepic.jpg 280w"
+           sizes="(min-width:1024px) 280px, 200px"
+           alt="A picture of a coffee I had in Roatan, Honduras" loading="lazy">
+    </picture>
+    -->
     <address>
       Contact us at
       <a href="mailto:jwarzybokmckenney@gmail.com">this email address</a>

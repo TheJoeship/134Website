@@ -26,51 +26,22 @@ input,select {
     background-color: var(--background-color2);
     margin: 5px;
 }
-/* reivew images */
-img {
-    border: pink solid 3px;
-    border-radius: 10px;
-    max-height: 380px;
-    max-width:300px
-}
 
 /* reviews (list) */
 main {
     font-family: "Courier New", Courier, monospace;
 }
 
-/* review, flex box*/
-.review {
-    list-style-type: none;
-    margin: 25px;
-    padding: 10px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto auto;
-    place-items: center;
-
-}
-@media screen and (max-width: 1400px){
-    .review {
-        grid-template-columns: auto;
-        grid-template-rows: auto 1fr 1fr 1fr;
-    }
+/* coffee shop review gallery */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px;
+    justify-content: center;
 }
 
-/* reivew header */
-h3 {
-    color: darkseagreen;
-    font-weight: bold;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 4em;
-    grid-column: 1/-1;
-}
-
-h4 {
-    text-align: center;
-}
-
+/* reivew table */
 table {
     border-collapse: collapse;
 }
@@ -88,7 +59,6 @@ tbody td {
     border: 1px solid black;
     background-color: var(--global-pink1);
 }
-
 
 
 
