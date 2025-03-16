@@ -5,13 +5,8 @@ import {getCSS} from "./review-cards-css.js";
 class ReviewCard extends HTMLElement {
     constructor() {
         super();
-
-        /* okay I dont actually know if I need this lol
-        this.attachShadow({mode: 'open'});
-        this.shadowRoot.innerHTML = '';
-         */
     }
-    /* custom element behavior when it gets mounted to the DOM */
+    /* custom element behavior when mounted to the DOM */
     connectedCallback() {
         const style = document.createElement('style');
         style.textContent = getCSS();
@@ -29,6 +24,7 @@ class ReviewCard extends HTMLElement {
         const foodScore = this.getAttribute('foodScore') || 'No food score';
         const accessibilityScore = this.getAttribute('accessibilityScore') || 'No accessibility score';
         const image = this.getAttribute('image') || 'No image';
+        const linkto = this.getAttribute('linkto') || 'No URL';
 
         /* what exactly is the custom element */
         this.innerHTML = ``;
@@ -87,11 +83,12 @@ class ReviewCard extends HTMLElement {
                 </hgroup>
                 <picture class="review-image">
                     <img src="${image}"
-                        srcset="./image_assets/coffeepic.jpg 280w"
+                        srcset="${image}"
                         sizes="(min-width:1024px) 300px, 220px"
-                        alt="A picture of a coffee I had in Roatan, Honduras" loading="lazy">
+                        alt="A picture of one of the many coffee shops we've reviewed!" loading="lazy">
                 </picture>
                 <p class="review-text">${reviewText}</p>
+                <a class="clink" target="_blank" href="${linkto}">Check out ${coffeeShop}'s site to learn more!</a>
             </div>`;
 
 

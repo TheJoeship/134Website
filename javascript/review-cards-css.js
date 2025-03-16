@@ -64,10 +64,17 @@ export function getCSS(){
         
         /* third row */
        .review-text {
-        grid-row: 3 /3;
-        grid-column: 1 / -1;
-        padding: 10px;
+            grid-row: 3 /3;
+            grid-column: 1 / -1;
+            padding: 10px;
        
+       }
+       
+       /* url */
+       .clink {
+           margin: 5px;
+           grid-column: 1 / -1;
+           color: hotpink;
        }
 
     `;

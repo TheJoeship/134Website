@@ -22,8 +22,9 @@ window.addEventListener('DOMContentLoaded', async () => {
             window.galleryItem.setAttribute("foodScore", `${cshop.foodScore}`);
             window.galleryItem.setAttribute("accessibilityScore", `${cshop.accessibilityScore}`);
             window.galleryItem.setAttribute("image", `${cshop.image}`);
+            window.galleryItem.setAttribute("linkto", `${cshop.linkto}`);
             document.getElementById("gallery").appendChild(window.galleryItem);
-            console.log(`${cshop.coffeeShop}`);
+            console.log(`${cshop.image}`);
         });
 
     } catch (error) {
