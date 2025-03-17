@@ -46,32 +46,77 @@
     </details>
 
 
+    <div class="review-buttons">
 
-    <search>
-      <form action="/search">
-        <label for="review">Search for a coffee shop:</label>
-        <input type="search" id="review" placeholder="A shop name... e.g ">
-        <button type="submit">Search</button>
-      </form>
-    </search>
+      <div class="label-select">
+        <label for="Categories">Sort by:</label>
+        <select id="Categories">
+          <optgroup label="Categories">
+            <option>Coffee Taste</option>
+            <option>Specialties</option>
+            <option>Location/Parking</option>
+            <option>Music/Vibes</option>
+            <option>Value</option>
+            <option>Outlets/Convenience</option>
+            <option>Food</option>
+            <option>Accessibility</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option>Highest Score</option>
+            <option>Lowest Score</option>
+          </optgroup>
+        </select>
+      </div>
 
-    <label for="Categories">Sort by:</label>
-    <select id="Categories">
-      <optgroup label="Categories">
-        <option>Coffee Taste</option>
-        <option>Specialties</option>
-        <option>Location/Parking</option>
-        <option>Music/Vibes</option>
-        <option>Value</option>
-        <option>Outlets/Convenience</option>
-        <option>Food</option>
-        <option>Accessibility</option>
-      </optgroup>
-      <optgroup label="Other">
-        <option>Highest Score</option>
-        <option>Lowest Score</option>
-      </optgroup>
-    </select>
+      <button id ="load-local" onclick="loadLocal()">Load Reviews Locally</button>
+
+      <button id ="load-remote" onclick="loadRemote()">Load Reviews Remotely</button>
+    </div>
+
+    <script>
+      document.getElementById("load-local").addEventListener("click", loadLocal);
+      document.getElementById("load-remote").addEventListener("click", loadRemote);
+
+      function loadLocal() {
+        if (typeof(Storage) !== "undefined") {
+          const script1 = document.createElement("script");
+          script1.src = "javascript/review-cards.js";
+          script1.type = "module";
+
+          //ensure we are populating review cards after theyve been created
+          script1.onload = () => {
+            const script2 = document.createElement("script");
+            script2.src = "javascript/populate-review-cards.js";
+
+            script2.onload = () => {populateReviews(true)};
+            console.log("populated review cards");
+            document.body.appendChild(script2);
+          };
+          document.body.appendChild(script1);
+        } else {
+          window.alert("Browser doesn't support local storage");
+        }
+      }
+
+      function loadRemote() {
+        const script1 = document.createElement("script");
+        script1.src = "javascript/review-cards.js";
+        script1.type = "module";
+
+        //ensure we are populating review cards after theyve been created
+        script1.onload = () => {
+          const script2 = document.createElement("script");
+          script2.src = "javascript/populate-review-cards.js";
+
+          script2.onload = () => {populateReviews()};
+          console.log("populated review cards");
+          document.body.appendChild(script2);
+        };
+        document.body.appendChild(script1);
+      }
+    </script>
+
+
     <button id="toggleButton" class="toggleButton">
       Light/Dark Mode
     </button>
@@ -80,8 +125,6 @@
 <main>
 
   <div id="gallery"></div>
-  <script type="module" src="javascript/review-cards.js"></script>
-  <script src="javascript/populate-review-cards.js"></script>
 
 </main>
   <footer>
